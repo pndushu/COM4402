@@ -1,0 +1,116 @@
+# =========================
+# OS-SPECIFIC
+# =========================
+
+# ---- Windows ----
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ---- macOS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+*.swp
+*.swo
+
+
+# =========================
+# PYTHON / VENV
+# =========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+.pytest_cache/
+.tox/
+.nox/
+.coverage*
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+
+# =========================
+# IDE: PYCHARM / INTELLIJ IDEA
+# =========================
+
+# JetBrains IDEs
+.idea/
+*.iml
+out/
+.gradle/
+build/
+cmake-build-*/
+
+# Local configs
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/httpRequests/
+
+
+# =========================
+# IDE: VISUAL STUDIO CODE
+# =========================
+
+.vscode/
+.history/
+*.code-workspace
+
+# Local settings
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+
+
+# =========================
+# MISC DEVELOPMENT
+# =========================
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Cache
+.cache/
+.tmp/
+
+# Env files
+*.env
+.env.*
