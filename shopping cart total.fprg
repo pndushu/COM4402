@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="shopping cart total"/>
+        <attribute name="authors" value="pn2crt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-11 09:49:00 AM"/>
+        <attribute name="created" value="cG4yY3J0O0FNVEQyMDQtMTg7MjAyNS0xMi0xMTswOToyODoxNSBBTTsyNDYz"/>
+        <attribute name="edited" value="cG4yY3J0O0FNVEQyMDQtMTg7MjAyNS0xMi0xMTswOTo0OTowMCBBTTsxOzI1Njg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price, totalprice" type="Integer" array="False" size=""/>
+            <assign variable="totalprice" expression="0"/>
+            <output expression="&quot;enter price&quot;" newline="True"/>
+            <input variable="price"/>
+            <while expression="price!=0">
+                <assign variable="totalprice" expression="price+totalprice"/>
+                <input variable="price"/>
+            </while>
+            <if expression="totalprice&gt;100">
+                <then>
+                    <assign variable="totalprice" expression="totalprice-totalprice/10"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;total price &quot;&amp;totalprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2515803-FLOWCHART"/>
+        <attribute name="authors" value="pn2crt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-09 01:42:27 PM"/>
+        <attribute name="created" value="cG4yY3J0O0FNVEQyMDQtMTg7MjAyNS0xMi0wOTswMToxOTozNCBQTTsyNDc4"/>
+        <attribute name="edited" value="cG4yY3J0O0FNVEQyMDQtMTg7MjAyNS0xMi0wOTswMTo0MjoyNyBQTTsxOzI1ODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numA, NumB, Sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;PLEASE ENTER NUMA&quot;" newline="True"/>
+            <input variable="NumA"/>
+            <output expression="&quot;PLEASE ENTER NUMB&quot;" newline="True"/>
+            <input variable="NumB"/>
+            <if expression="NUMA&gt;NUMB">
+                <then>
+                    <output expression="&quot;A IS GREATER THAN B&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;B IS GREATER THAN A&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;END PROGRAM&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="randomnum"/>
+        <attribute name="authors" value="pn2crt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-11 10:46:50 AM"/>
+        <attribute name="created" value="cG4yY3J0O0FNVEQyMDQtMTg7MjAyNS0xMi0xMTsxMDoxMjo0NiBBTTsyNDUy"/>
+        <attribute name="edited" value="cG4yY3J0O0FNVEQyMDQtMTg7MjAyNS0xMi0xMTsxMDo0Njo1MCBBTTsxOzI1NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="randomnum, usernum" type="Integer" array="False" size=""/>
+            <assign variable="randomnum" expression="random(50)"/>
+            <do expression="usernum!=randomnum">
+                <output expression="&quot;enter number&quot;" newline="True"/>
+                <input variable="usernum"/>
+                <if expression="usernum&lt;randomnum">
+                    <then>
+                        <output expression="&quot;guess to low&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="usernum&gt;randomnum">
+                            <then>
+                                <output expression="&quot;guess to high&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </do>
+            <output expression="&quot;correct&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

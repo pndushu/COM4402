@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="largest number"/>
+        <attribute name="authors" value="pn2crt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-11 10:12:41 AM"/>
+        <attribute name="created" value="cG4yY3J0O0FNVEQyMDQtMTg7MjAyNS0xMi0xMTswOTo0OToxNyBBTTsyNDY4"/>
+        <attribute name="edited" value="cG4yY3J0O0FNVEQyMDQtMTg7MjAyNS0xMi0xMTsxMDoxMjo0MSBBTTsxOzI1NTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter three numbers&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a&gt;b">
+                <then>
+                    <if expression="a&gt;c">
+                        <then>
+                            <output expression="&quot;largest number&quot;&amp;a" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;the largest number&quot;&amp;a" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="c&gt;b">
+                        <then>
+                            <output expression="&quot;the largest number&quot;&amp;c" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;the largestnumber&quot;&amp;b" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

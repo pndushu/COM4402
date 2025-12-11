@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="operation code"/>
+        <attribute name="authors" value="pn2crt"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-12-09 02:39:27 PM"/>
+        <attribute name="created" value="cG4yY3J0O0FNVEQyMDQtMTg7MjAyNS0xMi0wOTswMTo1NToxNSBQTTsyNDc3"/>
+        <attribute name="edited" value="cG4yY3J0O0FNVEQyMDQtMTg7MjAyNS0xMi0wOTswMjozOToyNyBQTTsxOzI1OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="success" type="Boolean" array="False" size=""/>
+            <assign variable="success" expression="true"/>
+            <declare name="a, b, res" type="Integer" array="False" size=""/>
+            <declare name="op" type="String" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="op"/>
+            <if expression="op == &quot;+&quot;">
+                <then>
+                    <assign variable="res" expression="a + b"/>
+                </then>
+                <else>
+                    <if expression="op == &quot;-&quot;">
+                        <then>
+                            <assign variable="res" expression="a - b"/>
+                        </then>
+                        <else>
+                            <if expression="op == &quot;*&quot;">
+                                <then>
+                                    <assign variable="res" expression="a * b"/>
+                                </then>
+                                <else>
+                                    <if expression="op == &quot;/&quot;">
+                                        <then>
+                                            <assign variable="res" expression="a / b"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="success" expression="false"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="success == true">
+                <then>
+                    <output expression="&quot;Result &quot; &amp;res" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Operation not valid&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;--- END OF PROGRAM ---&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
