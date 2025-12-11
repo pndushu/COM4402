@@ -1,0 +1,22 @@
+START
+    DECLARE a, b, c
+
+    PRINT "enter three numbers"
+    INPUT a
+    INPUT b
+    INPUT c
+
+    IF a>b
+        IF a > c
+            PRINT "largest is a"
+        ELSE
+            PRINT "largest is c"
+        ENDIF
+    ELSE
+        IF c > b
+            PRINT "largest is c"
+        ELSE
+            PRINT "largest is b"
+        ENDIF
+    ENDIF
+END
