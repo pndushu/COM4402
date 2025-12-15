@@ -1,0 +1,21 @@
+START
+
+Enter questions
+
+WHILE more questions
+    Enter next question
+END WHILE
+
+FOR each question
+    Display question and options
+    Get user's answer
+
+    IF answer is correct THEN
+        Apply score
+        Display score
+    ELSE
+        Display message
+    END IF
+END FOR
+
+END
