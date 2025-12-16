@@ -1,21 +1,34 @@
-START
+BEGIN
 
-Enter questions
+  Set score to 0
 
-WHILE more questions
-    Enter next question
-END WHILE
+  Create a LIST called questions_list
+  Each item contains:
+      - a question
+      - a LIST of options
+      - the correct answer
 
-FOR each question
-    Display question and options
-    Get user's answer
+  WHILE there are more questions to enter
+      Enter next question into questions_list
+  END WHILE
 
-    IF answer is correct THEN
-        Apply score
-        Display score
-    ELSE
-        Display message
-    END IF
-END FOR
+  FOR each question in questions_list DO
+
+      Display message (show question)
+      Display message (show options)
+
+      Get user's answer
+      Store as user_answer
+
+      IF user_answer matches the correct answer THEN
+          Increase score by 1
+          Display message (show updated score)
+      ELSE
+          Display message (inform user the answer is incorrect)
+      END IF
+
+  END FOR
+
+  Display message (show final score)
 
 END
