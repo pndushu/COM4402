@@ -1,7 +1,7 @@
 # -----------------------------
 # QUIZ PROGRAM
 # -----------------------------
-
+print("Answer the following questions with the appropriate answers:A,B,C,D ")
 questions = (
     "Which one of the following lives under water:",
     "The best gospel artist in Zimbabwe?:",
