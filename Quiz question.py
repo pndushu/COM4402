@@ -1,7 +1,9 @@
 # -----------------------------
-# QUIZ PROGRAM
+# QUIZ PROGRAM (Refactored)
 # -----------------------------
-print("Answer the following questions with the appropriate answers:A,B,C,D ")
+
+print("Answer the following questions with the appropriate answers: A, B, C, D")
+
 questions = (
     "Which one of the following lives under water:",
     "The best gospel artist in Zimbabwe?:",
@@ -18,34 +20,31 @@ options = (
     ("A. Pivot", "B. Drip", "C. Floods", "D. Sprinkler")
 )
 
-# Correct answers (5 questions → 5 answers)
 answers = ("D", "A", "D", "A", "A")
 
 guesses = []
 score = 0
-question_num = 0
 
 # -----------------------------
-# ASK EACH QUESTION
+# ASK QUESTIONS USING INDEX LOOP
 # -----------------------------
-for question in questions:
+for i in range(len(questions)):
     print("----------------")
-    print(question)
+    print(questions[i])
 
-    for option in options[question_num]:
-        print(option)
+    # Loop through options (Practice 4 style)
+    for opt in options[i]:
+        print(opt)
 
     guess = input("Enter (A, B, C, D): ").upper()
     guesses.append(guess)
 
-    if guess == answers[question_num]:
-        score += 1
+    if guess == answers[i]:
         print("Correct!")
+        score += 1
     else:
         print("Incorrect.")
-        print(f"The correct answer is: {answers[question_num]}")
-
-    question_num += 1
+        print(f"The correct answer is: {answers[i]}")
 
 # -----------------------------
 # RESULTS SECTION
@@ -54,14 +53,16 @@ print("__________________________________________________")
 print("                     RESULTS                      ")
 print("__________________________________________________")
 
+# Print answers (Practice 3 style loop)
 print("Answers: ", end="")
-for answer in answers:
-    print(answer, end=" ")
+for ans in answers:
+    print(ans, end=" ")
 print()
 
+# Print guesses (same loop style)
 print("Guesses: ", end="")
-for guess in guesses:
-    print(guess, end=" ")
+for g in guesses:
+    print(g, end=" ")
 print()
 
 percentage = int((score / len(questions)) * 100)
