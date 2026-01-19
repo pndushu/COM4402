@@ -1,6 +1,5 @@
-# -----------------------------
-# QUIZ PROGRAM (Refactored)
-# -----------------------------
+
+# QUIZ PROGRAM
 
 print("Answer the following questions with the appropriate answers: A, B, C, D")
 
@@ -25,14 +24,12 @@ answers = ("D", "A", "D", "A", "A")
 guesses = []
 score = 0
 
-# -----------------------------
 # ASK QUESTIONS USING INDEX LOOP
-# -----------------------------
 for i in range(len(questions)):
     print("----------------")
     print(questions[i])
 
-    # Loop through options (Practice 4 style)
+    # Loop through options
     for opt in options[i]:
         print(opt)
 
@@ -46,20 +43,18 @@ for i in range(len(questions)):
         print("Incorrect.")
         print(f"The correct answer is: {answers[i]}")
 
-# -----------------------------
 # RESULTS SECTION
-# -----------------------------
 print("__________________________________________________")
 print("                     RESULTS                      ")
 print("__________________________________________________")
 
-# Print answers (Practice 3 style loop)
+# Print answers
 print("Answers: ", end="")
 for ans in answers:
     print(ans, end=" ")
 print()
 
-# Print guesses (same loop style)
+# Print guesses
 print("Guesses: ", end="")
 for g in guesses:
     print(g, end=" ")
