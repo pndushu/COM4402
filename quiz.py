@@ -1,5 +1,22 @@
 
 # QUIZ PROGRAM
+def calculate_score(user_answers, correct_answers):
+    score = 0
+    for i in range(len(correct_answers)):
+        if user_answers[i].upper() == correct_answers[i].upper():
+            score += 1
+    return score
+
+correct_answers = ("D", "A", "D", "A", "A")
+
+username = input("Enter username: ")
+password = input("Enter password: ")
+
+if username == "admin" and password == "1234":
+    print("Login successful. Proceeding...")
+else:
+    print("Login failed. Program terminated.")
+    exit()
 
 print("Answer the following questions with the appropriate answers: A, B, C, D")
 
