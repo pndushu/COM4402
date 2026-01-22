@@ -1,13 +1,4 @@
 # QUIZ PROGRAM
-
-def calculate_score(user_answers, correct_answers):
-    score = 0
-    for i in range(len(correct_answers)):
-        if user_answers[i].upper() == correct_answers[i].upper():
-            score += 1
-    return score
-
-
 # QUIZ DATA AS LIST OF DICTIONARIES
 quiz = [
     {
